@@ -34,9 +34,9 @@ section {
   flex-direction: column;
 }
 
-// #ai {
-  
-// }
+#ai {
+  @include animation('fadein 2s'); 
+}
 
 // #sex {
 //   // display: block;
