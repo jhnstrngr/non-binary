@@ -60,19 +60,32 @@ footer {
   padding: 2rem;
 }
 
-#sex {
-  height: 500px;
+section {
+  padding: 2rem;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #title {
-  font-size: 3rem;
   font-weight: 700;
   -webkit-animation: fadein 1.5s;
   animation: fadein 1.5s;
 }
 
 .definition {
-  width: 40vw;
   padding: 0.5rem;
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
@@ -93,13 +106,46 @@ footer {
   line-height: 2.5;
 }
 
-canvas {
-  position: absolute;
+.storyText {
+  -webkit-animation: fadein 1.5s;
+  animation: fadein 1.5s;
 }
 
-video {
-  margin: 0;
-  padding: 0;
+canvas {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+}
+
+.fake-browser-ui {
+  padding: 20px 0 0;
+  border-radius: 3px;
+  border-bottom: 2px solid #ccc;
+  background: #ddd6dc;
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+}
+
+.fake-browser-ui .frame {
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+}
+
+.fake-browser-ui span {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  background-color: #eee;
+  border: 1px solid #dadada;
+  float: left;
+  margin: 0 0 0 4px;
+}
+
+.video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +155,12 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1rem;
+}
+
+#cameraview {
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 #genderAnalysis {
@@ -119,6 +171,8 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s;
 }
 
 #genderField {
@@ -145,5 +199,59 @@ video {
   100% {
     opacity: 1;
   }
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .definition {
+    width: 90vw;
+  }
+  #title {
+    font-size: 1.3rem;
+  }
+  #genderAnalysis {
+    font-size: 0.8rem;
+  }
+  .storyText {
+    width: 90vw;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .definition {
+    width: 40vw;
+  }
+}
+
+#genderAnalysis {
+  font-size: 1.5rem;
+}
+
+#title {
+  font-size: 3rem;
+}
+
+.storyText {
+  width: 60vw;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }
 /*# sourceMappingURL=main.css.map */

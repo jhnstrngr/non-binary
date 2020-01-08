@@ -24,7 +24,22 @@ footer {
     padding: 2rem;
 }
 
-#sex {
-  // display: block;
-    height: 500px;
-  }
+section {
+  padding: 2rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+// #ai {
+  
+// }
+
+// #sex {
+//   // display: block;
+//     // height: 500px;
+//   }
+
