@@ -8,6 +8,12 @@ body {
   background-color: #EDDDE0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -24,10 +30,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-canvas {
-  position: absolute;
 }
 
 header {
@@ -58,18 +60,8 @@ footer {
   padding: 2rem;
 }
 
-video {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#sex {
+  height: 500px;
 }
 
 #title {
@@ -92,11 +84,49 @@ video {
 
 .definition .type {
   font-style: italic;
+  line-height: 2;
 }
 
 .definition .source {
   float: right;
   font-weight: 300;
+  line-height: 2.5;
+}
+
+canvas {
+  position: absolute;
+}
+
+video {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#genderAnalysis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#genderField {
+  font-weight: 700;
+}
+
+#probField {
+  font-weight: 700;
 }
 
 @-webkit-keyframes fadein {

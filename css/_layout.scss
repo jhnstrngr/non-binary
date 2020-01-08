@@ -8,10 +8,6 @@ body {
     flex-direction: column;
   }
 
-canvas {
-    position: absolute;
-  }
-
 header {
   display: flex;
 	align-items: center;
@@ -28,10 +24,7 @@ footer {
     padding: 2rem;
 }
 
-video {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sex {
+  // display: block;
+    height: 500px;
   }

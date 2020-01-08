@@ -7,11 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
   <title>Non-Binary</title>
+  <script defer src="scripts/face-api.min.js"></script>
+  <script defer src="scripts/app.js"></script>
 </head>
 <body>
   <header>
-      <div id="title">Non-binary</div>
+      <div id="title">is gender binary?</div>
   </header>
+  <section id="sex">
+    <div class="definition">
+      <div class="word">sex</div>
+      <div class="type">noun</div>
+      <div class="quote">"either of the two main categories (male and female) into which humans and most other living things are divided on the basis of their reproductive functions."</div>
+      <div class="source">- Oxford Dictionary</div>
+    </div>
+  </section>
+  
   <div class="definition">
     <div class="word">gen·der</div>
     <div class="type">noun</div>
@@ -25,14 +36,11 @@
     <div class="source">- Oxford Dictionary</div>
   </div>
   <div class="video">
-    <div class="column is-full">
   <video id="cameraview" width="720" height="560" autoplay muted></video>
   </div>
-  </div>
+  <div id="genderAnalysis">A trained AI thinks there is &nbsp;<div id="probField">...</div><b>%</b>&nbsp; chance of you being &nbsp;<div id="genderField">...</div></div>
   <footer>
-    <div class="">Made with ❤️ by <b>John Stringer</b></div>
+    <div class="">Made with ❤️ by <a href="www.johnstringer.me"><b>John Stringer</b></a></div>
   </footer>
-  <script src="scripts/face-api.min.js"></script>
-  <script src="scripts/app.js"></script>
 </body>
 </html>

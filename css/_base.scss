@@ -16,6 +16,12 @@ body {
     background-color: $background;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 //Animation Mixin
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {

@@ -14,11 +14,38 @@
     }
     .type {
         font-style: italic;
+        line-height: 2;
     }
     .source {
         float: right;
         font-weight: 300;
+        line-height: 2.5;
     }
+}
+
+canvas {
+    position: absolute;
+  }
+
+video {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#genderAnalysis {
+    display: flex;
+    flex-direction: row;
+}
+
+#genderField {
+    font-weight: 700;
+}
+
+#probField {
+    font-weight: 700;
 }
 
 @include keyframes(fadein) {
