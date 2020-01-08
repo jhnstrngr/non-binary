@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700&display=swap");
 html {
   font-family: "Montserrat", Arial, sans-serif;
   color: #191C68;
@@ -6,11 +6,6 @@ html {
 
 body {
   background-color: #EDDDE0;
-}
-
-#title {
-  font-size: 3rem;
-  font-weight: 700;
 }
 
 body {
@@ -29,7 +24,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem;
 }
 
 canvas {
@@ -47,6 +41,21 @@ header {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 2rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem;
 }
 
 video {
@@ -61,5 +70,50 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 700;
+  -webkit-animation: fadein 1.5s;
+  animation: fadein 1.5s;
+}
+
+.definition {
+  width: 40vw;
+  padding: 0.5rem;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.definition .word {
+  font-weight: 700;
+}
+
+.definition .type {
+  font-style: italic;
+}
+
+.definition .source {
+  float: right;
+  font-weight: 300;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

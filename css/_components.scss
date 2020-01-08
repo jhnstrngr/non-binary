@@ -1,0 +1,27 @@
+#title {
+    font-size: 3rem;
+    font-weight: 700;
+    @include animation('fadein 1.5s');
+}
+
+.definition {
+    width: 40vw;
+    padding: 0.5rem;
+    @include animation('fadein 2s');
+
+    .word {
+        font-weight: 700;
+    }
+    .type {
+        font-style: italic;
+    }
+    .source {
+        float: right;
+        font-weight: 300;
+    }
+}
+
+@include keyframes(fadein) {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

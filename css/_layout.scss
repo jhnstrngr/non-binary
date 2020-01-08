@@ -6,21 +6,29 @@ body {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    padding: 3rem;
   }
 
-  canvas {
+canvas {
     position: absolute;
   }
 
-  header {
-    display: flex;
+header {
+  display: flex;
 	align-items: center;
 	justify-content: space-around;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 2rem;
   }
 
-  video {
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+video {
     margin: 0;
     padding: 0;
     display: flex;
