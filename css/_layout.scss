@@ -1,0 +1,29 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    // justify-content: center;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  canvas {
+    position: absolute;
+  }
+
+  header {
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  video {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

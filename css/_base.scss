@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap');
+
+$font-family: "Montserrat", Arial, sans-serif;
+
+$background: #EDDDE0;
+$text: #191C68;
+$primary: #191C68;
+
+
+html {
+    font-family: $font-family;
+    color: $text;
+}
+
+body {
+    background-color: $background;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: 700;
+}
