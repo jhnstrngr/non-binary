@@ -23,7 +23,6 @@
 }
 
 .storyText {
-    @include animation('fadein 1.5s');
 }
 
 canvas {
@@ -40,17 +39,17 @@ canvas {
     display: inline-block;
     position: relative;
     line-height: 0;
-}
+    @include animation('fadein 1.5s');
 
-.fake-browser-ui .frame {
+    .frame {
     display: block;
     height: 15px;
     position: absolute;
     top: 5px;
     left: 1px;
-}
+    }
 
-.fake-browser-ui span {
+    .span {
     height: 8px;
     width: 8px;
     border-radius: 8px;
@@ -58,6 +57,7 @@ canvas {
     border: 1px solid #dadada;
     float: left;
     margin: 0 0 0 4px;
+    }
 }
 
 .video {
@@ -69,7 +69,7 @@ canvas {
   }
 
 #cameraview {
-    @include animation('fadein 5s');
+    @include animation('fadein 4s');
 }
 
 
