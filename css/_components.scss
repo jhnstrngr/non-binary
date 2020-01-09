@@ -1,13 +1,12 @@
+//  Heading
 #title {
     font-weight: 700;
     @include animation('fadein 1.5s');
 }
 
-.definition {
-    
+//  Quote definitions
+.definition {  
     padding: 0.5rem;
-    
-
     .word {
         font-weight: 700;
     }
@@ -26,8 +25,10 @@ canvas {
     position: fixed;
     width: 1px;
     height: 1px;
+    opacity: 0;
 }
 
+//  Browser like frame
 .fake-browser-ui {
     padding: 20px 0 0;
     border-radius: 3px;
@@ -57,6 +58,7 @@ canvas {
     }
 }
 
+//  Video div
 .video {
     display: flex;
     justify-content: center;
@@ -65,11 +67,12 @@ canvas {
     
   }
 
+//  Camera id
 #cameraview {
     @include animation('fadein 4s');
 }
 
-
+//  Gender results fields
 #genderAnalysis {
     display: flex;
     flex-direction: row;
@@ -84,6 +87,7 @@ canvas {
     font-weight: 700;
 }
 
+//  Fade in keyframe made with mixin
 @include keyframes(fadein) {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -110,8 +114,6 @@ canvas {
 
 }
 
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
 .definition{
         width: 40vw;
@@ -130,5 +132,3 @@ canvas {
     width: 60vw;
     font-size: 1.5rem;
 }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }

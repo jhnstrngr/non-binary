@@ -27,7 +27,7 @@ cameraView.addEventListener('play', () => {
   let genderField = document.getElementById("genderField");
   let probField = document.getElementById("probField");
  
-
+//  Asycrinous tast that checks the face every 2 seconds and prints the results into the fields set.
   setInterval(async () => {
     const detections = await faceapi.detectAllFaces(cameraView, new faceapi.TinyFaceDetectorOptions())
       .withAgeAndGender();
